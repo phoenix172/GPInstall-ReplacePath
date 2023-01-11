@@ -11,7 +11,7 @@ string file2 = @"M:\install_gpi\HRM_2008_pw.gpi";
     ("\x0001\x0008FileName\x0006", "\x000c"),
     ("SourceFile\x0006", "\t")
 };
-string filePathRegexString = @"(?:[a-zA-Z]\:|\\\\[\w\-\.]+\\[\w\-.$]+)\\(?:[\w\-а-яА-Я ]+\\)*[\wа-яА-Я]([\w\-.а-яА-Я ])+";
+string filePathRegexString = @"(?:[a-zA-Z]\:|\\\\[\w\-\.]+\\[\w\-.$]+)\\(?:[\w\-а-яА-Я ]+\\)*[\wа-яА-Я]([\w\-\–.а-яА-Я ])+";
 Regex[] fileRegexes = appendages
     .Select(x =>
         new Regex($"(?'prefix'{x.prefix})(?'length'.)(?'path'{filePathRegexString})(?'suffix'{x.suffix})", RegexOptions.IgnoreCase))
