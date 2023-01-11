@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "GPInstall-ReplacePath": {
+      "commandName": "Project",
+      "commandLineArgs": "\"R:\\install\\GPI\\HRM_2008_pw2.gpi\" \r\n\"\\\\Users\\Install_Source\\HRM_2008\\ManualsLib\"\r\n\"R:\\ManualsLib\" \"R:\\install\\GPI\\HRM_2008_pw2.gpi\""
+    }
+  }
+}
